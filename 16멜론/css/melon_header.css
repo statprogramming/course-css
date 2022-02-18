@@ -1,0 +1,120 @@
+* {
+   margin : 0; 
+   padding : 0; 
+   list-style : none;
+}
+img {
+    max-width : 100%; 
+    height : auto;
+}
+header {
+    border-top : 4px solid green;
+}
+header .wrap {
+    border-bottom : 1px solid #999;
+}
+header .top,
+header .mid,
+header .bottom {
+    overflow : hidden; 
+    width : 1008px; 
+    margin : 0 auto;
+}
+header .top .top_left,
+header .top .top_right {
+    color : #999999; 
+    font-size : 12px;
+}
+header .top .top_left {
+    float : left; 
+    padding : 11px 7px;
+}
+header .top .top_right {
+    float : right;
+}
+header .top .top_right span.m1 {
+    background-image : url("../img_melon/head_menu.png"); 
+    background-position : 0 -60px; 
+    width : 79px; 
+    display : block; 
+    height : 13px; 
+    font-size : 13px;
+    line-height : 13px;
+    text-indent : -9999px;
+}
+.top_right > ul > li {
+    display : inline; 
+    border-left : 1px solid #999999;
+}
+.top_right > ul > li > a {
+    display : inline-block; 
+    padding : 11px 7px;
+    color : #666;
+    font-weight : bold;
+    text-decoration : none;
+}
+header .mid {
+    overflow : hidden;
+} 
+/* 부모 */
+header .mid img.left {
+    float: left;
+}
+header .mid img.right {
+    float : right; 
+    margin-top : 10px;
+}
+
+header .mid fieldset {
+    float: left;
+    width: 330px;
+    height: 40px;
+    margin: 36px 0 0 11px;
+    background-image: url(../img_melon/melon_search.png);
+    border:none;
+    overflow: hidden;
+}
+header .mid fieldset input[type="text"] {
+    float: left;
+    width: 260px;
+    height: 25px;
+    margin: 7px 0 0 18px;
+    border: none;
+
+}
+header .mid fieldset button {
+    float: right;
+    height: 40px;
+    width: 45px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    background-image: url(../img_melon/melon_btn.png);
+    background-color: #fff;/* 버튼의 기본 배경색 없앰 */
+}
+
+/* 네비bottom */
+.bottom {overflow: hidden;}
+.bottom .main_gnb {float: left;}
+.bottom .sub_gnb {float: right;}
+
+.bottom .sub_gnb li,
+.bottom .main_gnb li {display: inline;}
+
+.bottom .sub_gnb li a,
+.bottom .main_gnb li a {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000; 
+    text-decoration: none;
+    width: 75px;
+    height: 40px;
+}
+.bottom .main_gnb li a:hover {color:green;}
+
+
+
+
+

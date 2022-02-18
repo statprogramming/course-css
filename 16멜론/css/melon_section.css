@@ -1,0 +1,336 @@
+section .wrap {
+    width : 1008px; 
+    margin : 0 auto;
+}
+section .wrap h6 {
+    margin-top : 30px;
+}
+section .conts {
+    overflow : hidden;
+} 
+/* 부모 */
+section .list_wrap {
+    width : 480px; 
+    float: left;
+} 
+/* 세 넓이의 합 (마진포함)1080px */
+section .slide_wrap {
+    width : 236px; 
+    float : left; 
+    margin-left : 4px;
+}
+section .user_wrap {
+    width : 280px; 
+    float : left; 
+    margin-left : 8px;
+}
+section .list_wrap ul {
+    overflow : hidden;
+} 
+/* 부모 */
+section .list_wrap ul li {
+    float : left; 
+    width: 33.3333%;  
+    position : relative;
+}
+section .list_wrap ul li > a {
+    display : inline-block;  
+    position : relative;
+}
+/* 넓이가 이미지에 맞춰 채워짐 */
+section .list_wrap ul li > a .singer {
+    position : absolute;
+    left : 0px;
+    bottom : 5px;
+    width : 100%;
+    height : 22px;
+    line-height : 22px;
+    z-index : 10;
+    background-color : black;
+    opacity : 0.9;
+    color : #fff;
+    text-align : center;
+    font-size : 12px;
+    z-index : 9;
+    /* 호버 영역 10 */
+}
+section .list_wrap ul li .hover_cont { 
+    /* 호버 영역 */
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 156px;
+    height : 156px;
+    background-color : rgba(0, 0, 0, 0.8);
+    color : #fff;
+    font-size : 12px;
+    font-weight : bold;
+    text-align : center;
+    opacity : 0;
+    transition : opacity 0.25s ease-in-out;
+    z-index : 10; 
+    /* span 영역 9 */
+}
+section .list_wrap  ul li:hover .hover_cont {
+    opacity : 1;
+}
+section .list_wrap  ul li .hover_cont a {
+    color : #fff; 
+    position : absolute; /* a의 위치를 변경하기 위해(li의 rel기준으로 배치) */
+    width : 118px; 
+    height : 18px;
+    top : 60px; 
+    left : 19px; 
+}
+.login_wrap {
+    background-color : #fbfbfb;
+    height : 115px;
+    padding : 0 17px;
+    border : 1px solid #e0e0e0;
+    text-align : center;
+}
+.login_wrap .top_area {
+    padding : 24px 0 15px 0;
+}
+.login_wrap .top_area .left,
+.login_wrap .top_area .right {
+    font-size : 11px; 
+    color : #939393;
+}
+.login_wrap .top_area .left {
+    float : left;
+}
+.login_wrap .top_area .right {
+    float : right;
+}
+.login_wrap button {
+    width : 100%; 
+    height : 42px; 
+    background-color : #00d344; 
+    color : #fff; 
+    border : none; 
+    margin-top : 10px;
+}
+.promotion_wrap {
+    margin-top : 10px;
+}
+/* 메인 배너 */
+.wrap .main_banner {
+    margin-top: 20px;
+}
+/* 이슈 */
+.wrap .hot_issue {
+    width : 704px; 
+    margin-top : 20px; 
+}
+.wrap .hot_issue h4 {
+    border-bottom : 1px solid #999; 
+    padding : 5px 0;/* 위아래 좌우 */
+}
+.wrap .hot_issue h4 span {
+    font-size : 9px; 
+    color : #999999;
+}
+.wrap .hot_issue ul {
+    overflow : hidden;
+}
+.wrap .hot_issue ul li {
+    float : left; 
+    width : 223px; 
+    margin : 16px 0 0 16px;
+}
+.wrap .hot_issue ul li.m0 {
+    margin-left : 0;
+}
+/* m0클래스는 left를 제거 */
+.hot_issue .inner a {
+    text-decoration : none;
+}
+.hot_issue .inner a > span {
+    display : block; 
+    margin-top : 5px;}
+/* a의 바로 하위 자식 */
+.hot_issue .inner .title {
+    font-size : 15px; 
+    color : #000;
+}
+.hot_issue .inner .cont {
+    font-size : 10px; 
+    color : #777;
+}
+.hot_issue .inner .hit {
+    font-size : 10px; 
+    color : green; 
+}
+.hot_issue .inner .hit span {
+    color : #777
+};
+/* 차트 */
+.wrap {
+    overflow : hidden;
+}
+.wrap .hot_issue {
+    float : left;
+}
+.wrap .chart {
+    width : 280px;
+    float : left;
+    margin-left : 24px;
+    height : 472px;
+    margin-top : 20px;
+}
+.chart h4 {
+    border-bottom : 1px solid #999; 
+    padding : 5px 0; /* 위아래 좌우 */
+}
+.chart .chart_wrap {
+    border : 1px solid #999999;
+    margin-top : 16px;
+}
+.chart .chart_wrap .chart_top {
+    overflow : hidden;
+}
+.chart .chart_wrap .chart_top {
+    text-align : center;
+}
+.chart .chart_wrap .chart_top li a {
+    display : block;
+    width : 33.3333%;
+    float : left;
+    text-decoration : none;
+    color : #999;
+    padding : 5px 0;
+    font-size : 14px;
+}
+/* a태그에 tab_link클래스가 있는 경우 border */
+.chart .chart_wrap .chart_top li a.tab_link {
+    border-top : 2px solid #8ac121;
+}
+.chart .chart_wrap .chart_rank li {
+    width : 278px;
+    height : 33px;
+    /* line-height : 33px; */
+    border-top : 1px solid #999999;
+    overflow : hidden; /* 부모 */
+}
+.chart .chart_wrap .chart_rank .rank_num,
+.chart .chart_wrap .chart_rank .rank_cnt,
+.chart .chart_wrap .chart_rank .thumb {
+    float : left;
+} 
+.rank_num {
+    width : 34px; 
+    font-size : 20px; 
+    font-weight : bold; 
+    margin : 3px 0 0 8px;
+}
+.rank_cnt {
+    width : 22px; 
+    font-size : 11px; 
+    margin : 8px 0 0 8px;
+}
+.thumb {
+    margin-left : 10px; 
+    margin : 3px 0 0 8px;
+}
+.thumb img {
+    display : none;
+} /* 이미지 숨기기 */
+.rank_name a {
+    text-decoration : none; 
+    color : #000;
+}
+.rank_cont a {
+    text-decoration : none; 
+    color: #777;
+}
+/* .on클래스 스타일에 대하여 디자인 */
+.chart .chart_wrap .chart_rank li.on {
+    height : 66px;
+}
+.chart .chart_wrap .chart_rank li.on .rank_num {
+    margin-top : 20px;
+}
+.chart .chart_wrap .chart_rank li.on .rank_cnt {
+    margin-top : 25px;
+}
+.chart .chart_wrap .chart_rank li.on .thumb {
+    position : relative; 
+    padding : 10px 0 0 60px;
+}
+.chart .chart_wrap .chart_rank li.on .thumb img {
+    display : inline; 
+    position : absolute;
+    top :8px; 
+    left : 0px;
+}
+.chart .chart_wrap .chart_rank li.on .rank_info span {
+    display : block;
+}
+/* 
+.chart .chart_wrap .chart_rank li:hover {
+    height : 66px;
+}
+.chart .chart_wrap .chart_rank li:hover .rank_num {
+    margin-top : 20px;
+}
+.chart .chart_wrap .chart_rank li:hover .rank_cnt {
+    margin-top : 25px;
+}
+.chart .chart_wrap .chart_rank li:hover .thumb {
+    position : relative; 
+    padding : 10px 0 0 60px;
+}
+.chart .chart_wrap .chart_rank li:hover .thumb img {
+    display : inline; 
+    position : absolute;
+    top : 8px; 
+    left : 0px;
+}
+.chart .chart_wrap .chart_rank li:hover .rank_info span {
+    display : block;
+}
+ */
+/* 차트 버튼영역 */
+.chart .chart_btn_area {
+    border-top : 1px solid #999999;
+    overflow : hidden;
+    padding : 6px 8px;
+}
+.chart .chart_btn_area > button {
+    float : left; 
+    border :1px solid #999; 
+    background-color : #fbfbfb; 
+    padding : 5px 5px 5px 15px;
+    font-size : 12px;
+}
+.chart .chart_btn_area > span {
+    float : right;
+}
+.hot_issue {
+    margin-bottom : 50px;
+}
+/* 아래 공지영역 */
+.notice {
+    overflow : hidden; 
+    height : 28px;  
+    padding-top : 10px; 
+    border-top : 1px solid #777;
+}
+.notice .label {
+    float : left; 
+    font-size : 11px; 
+    font-weight : 900;
+}
+.notice .content {
+    float : left; 
+    font-size : 11px; 
+    color : #999; 
+    padding-left : 20px;
+}
+.notice .date {
+    float : left; 
+    font-size : 11px; 
+    color : #666; 
+    padding-left : 10px;
+}
